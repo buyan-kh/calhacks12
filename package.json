@@ -1,0 +1,45 @@
+{
+	"name": "mongolz",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "concurrently \"next dev\" \"wrangler dev\"",
+		"dev:next": "next dev",
+		"dev:worker": "wrangler dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@tailwindcss/postcss": "^4.1.16",
+		"@tldraw/sync": "^4.1.1",
+		"@tldraw/sync-core": "^4.1.1",
+		"@tldraw/tlschema": "^4.1.1",
+		"@types/node": "^24.9.1",
+		"autoprefixer": "^10.4.21",
+		"cloudflare-workers-unfurl": "^0.0.8",
+		"itty-router": "^5.0.18",
+		"lodash.throttle": "^4.1.1",
+		"next": "^16.0.0",
+		"postcss": "^8.5.6",
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0",
+		"react-router-dom": "^6.28.2",
+		"tailwindcss": "^4.1.16",
+		"tldraw": "^4.1.1"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "^1.13.2",
+		"@types/lodash.throttle": "^4.1.9",
+		"@types/react": "^18.3.18",
+		"@types/react-dom": "^18.3.5",
+		"@vitejs/plugin-react-swc": "^3.10.2",
+		"concurrently": "^9.1.2",
+		"eslint": "^9.38.0",
+		"eslint-config-next": "^16.0.0",
+		"typescript": "^5.9.3",
+		"vite": "^7.0.1",
+		"wrangler": "^4.37.1"
+	}
+}
